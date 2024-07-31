@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --cor--primaria: #C0E6DE;
+    --cor--azul--texto: #32746D;
+    --cor--preta--texto: #000000;
+    --cor--grey--texto: #495057;
+    --cor--branca--texto: #FFFFFF;
+    --cor--fundo--botao: #546D64;
+    --fonte--botoes: "Inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor--primaria);
+    color: var(--cor--segundaria--texto);
+}
+
+.apresentacao {
+    padding: 0% 3%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30rem;
+}
+
+.apresentacao__direita {
+    background-color: var(--cor--azul--texto);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 25%;
+    height: 45rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 2rem;
+    padding: 2.5rem;
+    text-decoration: none;
+    gap: 2rem;
+}
+
+.apresentacao__direita__mensagem {
+    display: flex;
+    width: 90%;
+    gap: 1rem;
+    flex-direction: column;
+    padding: 0rem 0rem 5rem 1rem;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.saida {
+    width: 100%;
+    font-size: 1.3rem;
+    text-align: center;
+    flex-direction: column;
+}
+
+.apresentacao__esquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.apresentacao__rodape {
+    display: flex;
+    text-align: center;
+    padding: 46rem 0 0 10rem;
+    position: absolute;
+    font-family: var(--fonte--botoes);
+}
+
+.titulo__principal {
+    color: var(--cor--azul--texto);
+    position: relative;
+    z-index: 10;
+    background-color: transparent;
+    font-size: 2rem;
+    font-family: var(--fonte--botoes);
+    margin: 4rem 10rem 35rem 10rem;
+    resize: none;
+    border: none;
+    width: 50%;
+    height: 15rem;
+    outline: 0;
+    font-family: var(--fonte--botoes);
+}
+
+.titulo__negrito {
+    color: var(--cor--branca--texto);
+    font-size: 1.5rem;
+    font-family: var(--fonte--botoes);
+}
+
+.titulo__negrito__segundario {
+    color: var(--cor--branca--texto);
+    font-size: 1.2rem;
+    font-family: var(--fonte--botoes);
+}
+
+.botao__copiar {
+    display: flex;
+    flex-direction: column;
+}
+
+.copiar {
+    color: var(--cor--preta--texto);
+    font-size: 1.5rem;
+    background-color: var(--cor--primaria);
+    text-align: center;
+    border-radius: 1.5rem;
+    border: 3px solid var(--cor--azul--texto);
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+    font-family: var(--fonte--botoes);
+}
+
+.copiar:hover {
+    background-color: var(--cor--branca--texto);
+}
+
+.imagem__exclamacao {
+    width: 1rem;
+    height: 1rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.titulo__rodape {
+    display: flex;
+    align-items: center;
+    color: var(--cor--grey--texto);
+    font-size: 0.75rem;
+}
+
+.botoes {
+    display: flex;
+    position: absolute;
+    width: 50%;
+    padding: 48rem 1rem 0 10rem;
+    gap: 1.5rem;
+}
+
+.titulo__botao__primeiro {
+    color: var(--cor--branca--texto);
+    font-size: 1.5rem;
+    background-color: var(--cor--azul--texto);
+    width: 20.5rem;
+    text-align: center;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+    font-family: var(--fonte--botoes);
+}
+
+.titulo__botao__primeiro:hover {
+    background-color: var(--cor--primaria);
+}
+
+.titulo__botao__segundo {
+    color: var(--cor--preta--texto);
+    font-size: 1.5rem;
+    background-color: var(--cor--fundo--botao);
+    width: 20.5rem;
+    text-align: center;
+    border-radius: 1.5rem;
+    border: 3px solid var(--cor--azul--texto);
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+    font-family: var(--fonte--botoes);
+}
+
+.titulo__botao__segundo:hover {
+    background-color: var(--cor--primaria);
+}
+
+.imagem__lupa {
+    width: 80%;
+    height: 19rem;
+    padding: 13rem 0 0 2rem;
+    max-width: 100%;
+}
+
+.rodape {
+    padding: 1rem;
+    width: 100%;
+    position: relative;
+    color: var(--cor--branca--texto);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.rodape__escrito {
+    text-decoration: none;
+    width: 100%;
+    color: var(--cor--preta--texto);
+    font-family: var(--fonte--botoes);
+}
+
+.rodape__escrito__nome {
+    text-decoration: none;
+    width: 100%;
+    color: var(--cor--azul--texto);
+    font-family: var(--fonte--botoes);
+}
+
+@media (max-width: 1020px) {
+    .apresentacao {
+        /* flex-direction: column; */
+        padding: 1% 10% 1% 5%;
+        display: grid;
+        gap: 0;
+    }
+
+    .apresentacao__direita {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .apresentacao__direita__mensagem {
+        padding-bottom: 60%;
+    }
+
+    .titulo__principal {
+        margin-left: 10%;
+    }
+
+    .imagem__lupa {
+        display: none;
+    }
+
+    .botoes {
+        justify-content: center;
+        width: 70%;
+        margin: auto;
+        margin-left: -10%;
+        margin-right: 10%;
+        gap: 5%;
+    }
+
+    .apresentacao__rodape {
+        margin: 0% auto auto auto;
+        justify-content: center;
+        gap: 5%;
+    }
+}
+
+@media (max-width: 450px) {
+    .apresentacao {
+        display: grid;
+        padding: 3% 5% 0 0;
+        flex-direction: grid;
+        gap: 5%;
+    }
+
+    .apresentacao__direita {
+        display: grid;
+        width: 80%;
+        height: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .titulo__principal {
+        justify-content: center;
+    }
+
+    .botoes {
+        display: grid;
+        flex-direction: column;
+        margin-left: -20%;
+        margin-right: -20%;
+        gap: 20%;
+    }
+
+    .apresentacao__rodape {
+        margin-left: -15%;
+        gap: 5%;
+    }
+
+    .botao_copiar {
+        margin-bottom: 20%;
+    }
+
+    .rodape {
+        margin-top: 20%;
+    }
+
+}

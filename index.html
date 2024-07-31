@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Decodificador</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+        </header>
+        <main class="apresentacao">
+            <section class="apresentacao__esquerda">
+                <textarea name="mensagem" id="msg" class="titulo__principal" placeholder="Digite seu texto"></textarea>
+                <div class="apresentacao__rodape">
+                    <img class="imagem__exclamacao" src="/assets/Exclamação.png" alt="Imagem ponto de exclamação">
+                    <p class="titulo__rodape">Apenas letras minúsculas e sem acento.</p>
+                    <br>        
+                </div>
+                <br>
+                <div class="botoes">
+                    <button class="titulo__botao__primeiro">Criptografar</button>
+                    <button class="titulo__botao__segundo">Descriptografar</button>
+                </div>
+            </section>    
+            <section class="apresentacao__direita">
+                <p class="saida"></p>
+                <img class="imagem__lupa" src="./assets/imagemLupa.png" alt="Imagem de uma Lupa">
+                <div class="apresentacao__direita__mensagem">
+                    <h1><strong class="titulo__negrito">Nenhuma mensagem encontrada</strong></h1>
+                    <h2 class="titulo__negrito__segundario">Digite um texto que você deseja criptografar ou descriptografar.</h2>
+                </div>
+                <div class="botao_copiar">
+                <button onclick="copiar()" id="copy" class="copiar">Copiar</button>
+                </div>
+            </section>
+        </main>
+        <footer class="rodape">
+            <a class="rodape__escrito" href="https://github.com/xgkrt">Desenvolvido por <strong= class="rodape__escrito__nome">Lucas Guedes</strong></a>
+        </footer>
+        <script src="app.js"></script>
+    </body>
+</html>
