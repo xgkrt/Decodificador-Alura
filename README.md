@@ -7,3 +7,5 @@ Este é o meu primeiro projeto utilizando HTML, CSS e JavaScript, desenvolvido a
 - **Criptografia:** Transforma o texto digitado pelo usuário em uma mensagem criptografada.
 - **Descriptografia:** Reverte a mensagem criptografada de volta para o texto original.
 
+  ![Decodificador de texto](https://github.com/user-attachments/assets/be35d32e-0d56-4f74-9de6-053d4d90515f)
+
